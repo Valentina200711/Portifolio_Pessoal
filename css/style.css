@@ -113,49 +113,45 @@ nav a {
     box-shadow: 15px 15px 0 var(--rosa-antigo);
 }
 
-
-
-/* =========================
-   HABILIDADES
-========================= */
-
+ /* =========================
+    Habilidades
+ ========================= */
 #habilidades {
     padding: 100px 8%;
-    background-color: var(--vinho-escuro);
-    color: var(--branco);
+    background-color:var(--fundo);    
 }
 
-/*TITULO*/
+/* Título */
 .habilidades-titulo {
     max-width: 700px;
     margin-bottom: 60px;
 }
 
 .habilidades-titulo span {
-    color: var(--rosa-medio);
+    color: var(--rosa-antigo);
     font-size: 0.85rem;
     letter-spacing: 3px;
 }
 
 .habilidades-titulo h2 {
     margin: 15px 0;
-    color: var(--branco);
+    color: var(--vinho);
     font-family: Georgia, serif;
-    font-size: 2.8rem;
+    font-size: 3rem;
 }
 
 .habilidades-titulo p {
-    color: var(--rosa-claro);
+    color: var(--texto);
     line-height: 1.7;
 }
 
- /*GRID DE HABILIDADES*/
+/* GRID DE HABILIDADES */
 .habilidades-grid {
+     max-width: 1100px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: 0 auto;
+    gap: 30px;
 }
 
 /* CARD */
@@ -192,6 +188,27 @@ nav a {
     color: var(--texto);
     font-size: 0.9rem;
     line-height: 1.6;
+}
+/* TABLET*/
+@media (max-width: 900px) {
+    .projetos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*CELULAR*/
+@media (max-width: 600px) {
+    #projetos {
+        padding: 70px 6%;
+    }
+
+    .projetos-titulo h2 {
+        font-size: 2.3rem;
+    }
+    
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
